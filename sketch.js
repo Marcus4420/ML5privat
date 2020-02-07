@@ -27,7 +27,7 @@ MarsvinInfo = "Marsvin er flokdyr og bør dermed aldrig leve i ensomhed, men der
     createCanvas(800, 400);
     // Create the video
     video = createCapture(VIDEO);
-    video.size(300, 240);
+    video.size(600, 480);
     video.hide();
     flippedVideo = ml5.flipImage(video)
     // Begins classification
@@ -45,7 +45,7 @@ MarsvinInfo = "Marsvin er flokdyr og bør dermed aldrig leve i ensomhed, men der
   function draw() {
     // Draw the video
     fill(122);
-    rect(0,0,320,260,20);
+    rect(0,0,320,260,10);
     flippedVideo = ml5.flipImage(video)
     flippedVideo.remove();
     image(flippedVideo, 10, 10);
