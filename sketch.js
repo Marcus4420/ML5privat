@@ -36,7 +36,6 @@
   }
 
   function draw() {
-    background(255);
     textSize(12);
     fill(0);
     text(txtbox, 400, 200, 600, 300);
