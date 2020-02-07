@@ -4,16 +4,46 @@
 
 <head>
    <title>Årsprojekt - 2020</title>
+   <link rel="preload" type="text/css" href="style.css">
    <link rel="stylesheet" type="text/css" href="style.css">
    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-   <meta charset="utf-8" />
-   <script src="p5.min.js"></script>
-   <script src="p5.dom.min.js"></script>
-   <script src="ml5.min.js"></script>
-   <script src="sketch.js"></script>
+   <meta charset="utf-8"/>
+   <link rel="preload" href="https://code.jquery.com/jquery-3.3.1.js" as="script">
+   <link rel="preload" href="scrollChange" as="script">
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="ScrollChange.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
-<body>
+<body onscroll='scrollChange()'>
+   <div class="wrapper">
+      <header>
+                        </mask>
+                      </defs>
+                    </svg>
+
+            <nav>
+
+                  <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                  </div>
+                  <div class="logo">
+                        <img src="Zoo_kobenhavn.png" style="width: 20%; height: 20%; margin-top: 7px;">
+                  </div>
+
+                  <div class="menu">
+                        <ul id='menubar'>
+                              <li><a href="#">Hjem</a></li>
+                              <li><a href="#">Om os</a></li>
+                              <li><a href="#">Kontakt</a></li>
+                              <li><a href="#">Slotshaven Gymnasium</a></li>
+                        </ul>
+                  </div>
+            </nav>
+
+      </header>
+
    <div class="container">
       <div class="hvid-boks">
             <div class="featured">
@@ -21,10 +51,14 @@
                <br>
                <br>
             </div>
-            <p></p>
+               <p></p>
             <div class="vertical-text"><span>INFOBOX</span></div>
       </div>
    </div>
+   <script src="p5.min.js"></script>
+   <script src="p5.dom.min.js"></script>
+   <script src="ml5.min.js"></script>
+   <script src="sketch.js"></script>
 </body>
 
 </html>
