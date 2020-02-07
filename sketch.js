@@ -36,14 +36,11 @@
   }
 
   function draw() {
-    textSize(12);
-    fill(0);
-    text(txtbox, 400, 200, 600, 300);
+    infobox();
     // Draw the video
     var flippedVideo = ml5.flipImage(video)
     flippedVideo.remove();
     image(flippedVideo, 0, 0);
-    console.log(label)
 
 
     //Vi definerer dyret, så vi kan arbejde videre med projektet udover machine learning delen.
@@ -108,4 +105,8 @@
     if (CurrAni == "Kanin") {
       txtbox = "JEG ER EN: " + label
     }
+  }
+
+  function infobox() {
+    document.querySelector('.result').innerHTML = 'Dyret du har med at gøre er en' + label;
   }
