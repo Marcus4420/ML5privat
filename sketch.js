@@ -36,17 +36,15 @@
   }
 
   function draw() {
+    fill(255);
+    rect(390,190,610,310);
     textSize(12);
     fill(0);
     text(txtbox, 400, 200, 600, 300);
     // Draw the video
     flippedVideo = ml5.flipImage(video)
     image(flippedVideo, 0, 0);
-    // Draw the label
-    fill(0);
-    textSize(24);
-    textAlign(CENTER);
-    text(label, 150, height - 5);
+    console.log(label)
 
 
     //Vi definerer dyret, så vi kan arbejde videre med projektet udover machine learning delen.
