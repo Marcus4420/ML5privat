@@ -29,7 +29,7 @@
 
     classifyVideo();
     INFOBUTTON = createButton("Info");
-    INFOBUTTON.position(150, 300);
+    INFOBUTTON.position(170, 300);
     INFOBUTTON.size(64);
     INFOBUTTON.mousePressed(infopress);
 
@@ -42,7 +42,8 @@
     fill(0);
     text(txtbox, 400, 200, 600, 300);
     // Draw the video
-    flippedVideo = ml5.flipImage(video)
+    var flippedVideo = ml5.flipImage(video)
+    flippedVideo.remove();
     image(flippedVideo, 0, 0);
     console.log(label)
 
