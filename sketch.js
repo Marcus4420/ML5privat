@@ -29,24 +29,23 @@
 
     classifyVideo();
     INFOBUTTON = createButton("Info");
-    INFOBUTTON.position(150, 300);
+    INFOBUTTON.position(170, 300);
     INFOBUTTON.size(64);
     INFOBUTTON.mousePressed(infopress);
 
   }
 
   function draw() {
+    fill(255);
+    rect(390,190,610,310);
     textSize(12);
     fill(0);
     text(txtbox, 400, 200, 600, 300);
     // Draw the video
-    flippedVideo = ml5.flipImage(video)
+    var flippedVideo = ml5.flipImage(video)
+    flippedVideo.remove();
     image(flippedVideo, 0, 0);
-    // Draw the label
-    fill(0);
-    textSize(24);
-    textAlign(CENTER);
-    text(label, 150, height - 5);
+    console.log(label)
 
 
     //Vi definerer dyret, så vi kan arbejde videre med projektet udover machine learning delen.
@@ -100,15 +99,15 @@
       txtbox = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
     if (CurrAni == "Kat") {
-      txtbox = "JEG ER EN Kat"
+      txtbox = "JEG ER EN: " + label
     }
     if (CurrAni == "Papegøje") {
-      txtbox = "JEG ER EN Papegøje"
+      txtbox = "JEG ER EN:" + label
     }
     if (CurrAni == "Marsvin") {
-      txtbox = "JEG ER EN Marsvin"
+      txtbox = "JEG ER EN: " + label
     }
     if (CurrAni == "Kanin") {
-      txtbox = "JEG ER EN Kanin"
+      txtbox = "JEG ER EN: " + label
     }
   }
