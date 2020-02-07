@@ -19,7 +19,7 @@
   }
 
   function setup() {
-    createCanvas(800, 270);
+    createCanvas(800, 400);
     // Create the video
     video = createCapture(VIDEO);
     video.size(300, 240);
@@ -37,6 +37,9 @@
 
   function draw() {
     background(255);
+    textSize(12);
+    fill(0);
+    text(txtbox, 400, 200, 600, 300);
     // Draw the video
     flippedVideo = ml5.flipImage(video)
     image(flippedVideo, 0, 0);
@@ -95,7 +98,18 @@
     CurrAni = animal;
     console.log(CurrAni);
     if (CurrAni == "Hund") {
-      fill(0);
-      text(txtbox, 400, 200);
+      txtbox = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+    if (CurrAni == "Kat") {
+      txtbox = "JEG ER EN Kat"
+    }
+    if (CurrAni == "Papegøje") {
+      txtbox = "JEG ER EN Papegøje"
+    }
+    if (CurrAni == "Marsvin") {
+      txtbox = "JEG ER EN Marsvin"
+    }
+    if (CurrAni == "Kanin") {
+      txtbox = "JEG ER EN Kanin"
     }
   }
