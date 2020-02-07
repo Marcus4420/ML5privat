@@ -3,7 +3,7 @@ HundInfo = "Tamhunden (Canis lupus familiaris på latin) er det husdyr, som tidl
 PapeInfo = "Papegøjer er en orden af fugle, på latin kaldet Psittaciformes. Herunder findes 3 familier: Orden: Papegøjer Familie: Kakaduer Familie: Egentlige papegøjer eks.: Alexanderparakit, Ara, Dværgpapegøje, Undulat Familie: Uglepapegøjer eks.: Kakapo, Kea, Kaka Inden for disse 3 familier findes over 390 forskellige arter."
 KaninInfo = "Vildkanin eller europæisk vildkanin (Oryctolagus cuniculus) hører ligesom hare til ordenen støttetandede. Det betyder, at de bag de øverste fortænder har to ekstra tænder. Vildkanin har kortere bagben end hare, men minder ellers meget om denne. Kaninens ører er forholdsvis korte. De når kun ud til snudespidsen, mens harens når 2-3 centimeter udenfor. Vildkaniner vejer 1½-2 kg."
 MarsvinInfo = "Marsvin er flokdyr og bør dermed aldrig leve i ensomhed, men derimod med an artsfælle. Det er uhensigtsmæssigt at have et fertil hanmarsvin og et fertilt hunmarsvin gående permanent sammen, da hunmarsvinet straks går i brunst og dermed kan være drægtig med det samme igen efter fødsel, hvilket er til stor belastning for hunnen. Derfor er det bedre at have 2 marsvin af samme køn - eller alternativt en kasteret han og en eller flere hunner. Hanner kan sagtens gå sammen, hvis man sørger for, der er en klar størrelses- og aldersmæssigt forskel, så som 4-8 uger gammel hanunge og en ældre han +5 måneder."
-
+TempInfo = "Her kommer fakta om det valgte dyr til at ses. Tryk på 'info' for at komme igang."
  // Classify Variable
   let classifier;
   let INFOBUTTON;
@@ -27,16 +27,17 @@ MarsvinInfo = "Marsvin er flokdyr og bør dermed aldrig leve i ensomhed, men der
     createCanvas(800, 400);
     // Create the video
     video = createCapture(VIDEO);
-    video.size(300, 240);
+    video.size(300, 250);
     video.hide();
     flippedVideo = ml5.flipImage(video)
     // Begins classification
     classifyVideo();
+    document.getElementById("infokasse").innerHTML = TempInfo;
 
 
 
     INFOBUTTON = createButton("Info");
-    INFOBUTTON.position(170, 300);
+    INFOBUTTON.position(170, 400);
     INFOBUTTON.size(64);
     INFOBUTTON.mousePressed(infopress);
 
@@ -45,7 +46,7 @@ MarsvinInfo = "Marsvin er flokdyr og bør dermed aldrig leve i ensomhed, men der
   function draw() {
     // Draw the video
     fill(122);
-    rect(0,0,320,260,20);
+    rect(0,0,320,270,10);
     flippedVideo = ml5.flipImage(video)
     flippedVideo.remove();
     image(flippedVideo, 10, 10);
