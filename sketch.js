@@ -32,7 +32,7 @@ TempInfo = "Her kommer fakta om det valgte dyr til at ses. Tryk på 'info' for a
     flippedVideo = ml5.flipImage(video)
     // Begins classification
     classifyVideo();
-    document.getElementById("infokasse").innerHTML = TempInfo;
+    document.getElementById("infokasse").innerHTML = TempInfo   ;
 
 
 
