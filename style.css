@@ -7,6 +7,7 @@ body {
   background-size: cover;
   font-family: "Comfortaa";
   z-index: -1;
+  height:2000px ;
 }
 
 canvas {
@@ -54,7 +55,6 @@ canvas {
 
 .featured:before {
   content: '+';
-  font-weight: 600;
   display: inline-block;
   margin-right: 1px;
   color: #4CB1FF;
@@ -64,8 +64,9 @@ canvas {
 .vertical-text {
   width: 50px;
   height: 50px;
-  margin: 0px 0px auto auto;
   background: #4CB1FF;
+  margin-top: -80px;
+  margin-left: 450px;
 }
 
 .vertical-text span {
@@ -76,11 +77,11 @@ canvas {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  position: fixed;
 }
 
 p {
   text-align: left;
-  width: 450px;
 }
 
 header {
