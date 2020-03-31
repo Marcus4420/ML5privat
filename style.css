@@ -35,7 +35,7 @@ canvas {
 
 .hvid-boks {
   width: 500px;
-  height: 100px;
+  height: auto;
   margin-top: 125px;
   margin-left: auto;
   float: right;
@@ -61,6 +61,17 @@ canvas {
   z-index: -1;
 }
 
+::before {
+  font-size: xx-large;
+}
+
+
+.featured {
+  padding-right: 50px;
+  
+}
+
+
 .vertical-text {
   width: 50px;
   height: 50px;
@@ -77,7 +88,6 @@ canvas {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  position: fixed;
 }
 
 p {
