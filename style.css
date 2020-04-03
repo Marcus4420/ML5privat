@@ -7,7 +7,6 @@ body {
   background-size: cover;
   font-family: "Comfortaa";
   z-index: -1;
-  height:2000px ;
 }
 
 canvas {
