@@ -3,16 +3,15 @@
 Frontend
 [x] Scalable design
 [] Genvejene på menuen/navbar
-[] Contain tekst i infobox
+[x] Contain tekst i infobox
 [x] Scrolleffect
 
 Backend
-[] Skriv ordentlige info om dyr
-[] Scalability
-[] Arkitektur
-[] "Rengør" koden
-[] var, let & const
-[] Optimer runtime
+[x] Skriv ordentlige info om dyr
+[] Scalability(resize)
+[] Arkitektur / "Rengør" koden
+[x] Const -> Let -> Var
+[x] Optimer runtime
 [] Effektiviser js til html sammenkobling
-[] Skift til ren JS.. Python hvis du cool?
 [] Technical/nørde side
+[x] Documentation

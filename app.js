@@ -11,7 +11,7 @@ const TempInfo = "Her kommer fakta om det valgte dyr til at ses. Tryk på 'info'
   let kamera;
 
   // Model URL
-  let imageModelURL = 'https://teachablemachine.withgoogle.com/models/TV5B6ZWS/';
+  const imageModelURL = 'https://teachablemachine.withgoogle.com/models/TV5B6ZWS/';
   
   // Video setup
   let video;
